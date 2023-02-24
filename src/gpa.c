@@ -589,7 +589,7 @@ main (int argc, char *argv[])
   /* GnuPG can not create a key if its home directory is missing.  We
      help it out here.  Should be fixed in GnuPG.  */
   if (! g_file_test (gnupg_homedir, G_FILE_TEST_IS_DIR))
-    g_mkdir (gnupg_homedir, 0700);
+    g_mkdir_with_parents (gnupg_homedir, 0700);
 
   /* Locate GPA's configuration file.  */
   if (! args.options_filename)
