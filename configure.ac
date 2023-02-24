@@ -104,7 +104,7 @@ AH_BOTTOM([
 
 
 AM_MAINTAINER_MODE
-AM_SILENT_RULES
+AM_SILENT_RULES([yes])
 
 dnl Check for libraries
 AC_CHECK_LIB(m, sin)
